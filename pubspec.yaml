@@ -1,0 +1,18 @@
+name: tv_gratis
+description: Directorio y reproductor de contenido gratuito y legal (Argentina).
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  url_launcher: ^6.3.0
+  video_player: ^2.9.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/catalogo.json

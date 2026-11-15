@@ -1,0 +1,74 @@
+{
+  "plataformas": [
+    {
+      "nombre": "Pluto TV",
+      "descripcion": "Canales de TV en vivo y películas y series a pedido, con publicidad.",
+      "contenido": "Canales temáticos, cine, series, documentales",
+      "registro": "No requiere registro",
+      "etiqueta": "Sin registro",
+      "limitaciones": "Publicidad. El catálogo varía según el país.",
+      "url": "https://pluto.tv"
+    },
+    {
+      "nombre": "Plex",
+      "descripcion": "Películas y series gratis con anuncios, más canales en vivo.",
+      "contenido": "Cine, series, canales en vivo",
+      "registro": "Cuenta gratuita recomendada",
+      "etiqueta": "Cuenta gratis",
+      "limitaciones": "Publicidad. Catálogo gratuito limitado según región.",
+      "url": "https://watch.plex.tv"
+    },
+    {
+      "nombre": "Cine.ar Play",
+      "descripcion": "Plataforma oficial del INCAA con cine argentino gratuito.",
+      "contenido": "Películas, series y documentales argentinos",
+      "registro": "Registro gratuito",
+      "etiqueta": "Registro gratis",
+      "limitaciones": "Catálogo centrado en producción nacional.",
+      "url": "https://play.cine.ar"
+    },
+    {
+      "nombre": "Contar",
+      "descripcion": "Plataforma pública argentina con TV Pública, Encuentro, Pakapaka y más.",
+      "contenido": "Canales en vivo, series, documentales, infantil",
+      "registro": "Consultar en el sitio",
+      "etiqueta": "Oficial",
+      "limitaciones": "Disponibilidad de contenido puede variar.",
+      "url": "https://www.contar.gob.ar"
+    },
+    {
+      "nombre": "ViX",
+      "descripcion": "Servicio con una versión gratuita con anuncios para Latinoamérica.",
+      "contenido": "Películas, series, novelas, canales en vivo",
+      "registro": "Cuenta gratuita",
+      "etiqueta": "Con anuncios",
+      "limitaciones": "Parte del catálogo es solo para suscriptores.",
+      "url": "https://vix.com"
+    },
+    {
+      "nombre": "YouTube - Películas gratis",
+      "descripcion": "Películas completas gratis con anuncios en canales oficiales.",
+      "contenido": "Películas de estudios y distribuidores",
+      "registro": "No requiere registro",
+      "etiqueta": "Sin registro",
+      "limitaciones": "Catálogo rotativo. Algunos títulos se ven con restricciones por país.",
+      "url": "https://www.youtube.com/feed/storefront"
+    }
+  ],
+  "peliculas": [
+    {
+      "nombre": "La noche de los muertos vivientes (1968)",
+      "descripcion": "Clásico de terror en dominio público, en Internet Archive.",
+      "etiqueta": "Dominio público",
+      "tipo": "reproducir",
+      "url": "https://archive.org/download/night_of_the_living_dead/night_of_the_living_dead_512kb.mp4"
+    },
+    {
+      "nombre": "Cine clásico - Internet Archive",
+      "descripcion": "Colección de películas de dominio público.",
+      "etiqueta": "Dominio público",
+      "tipo": "abrir",
+      "url": "https://archive.org/details/feature_films"
+    }
+  ]
+}
