@@ -2,22 +2,18 @@ workflows:
   android-tv:
     name: Android + Android TV (APK)
     max_build_duration: 30
-    instance_type: linux_x2
+    instance_type: mac_mini_m2
     environment:
       flutter: stable
     scripts:
       - name: Generar carpeta android sin pisar el codigo
         script: |
-          mkdir /tmp/src
+          mkdir -p /tmp/src
           cp -r lib assets pubspec.yaml /tmp/src/
           flutter create . --platforms=android --org com.tuusuario --project-name tv_gratis
           cp -r /tmp/src/* .
       - name: Parchear AndroidManifest para TV, internet y enlaces
-        script: |
-          M=android/app/src/main/AndroidManifest.xml
-          sed -i 's#<application#<uses-permission android:name="android.permission.INTERNET"/>\n    <uses-feature android:name="android.software.leanback" android:required="false"/>\n    <uses-feature android:name="android.hardware.touchscreen" android:required="false"/>\n    <queries><intent><action android:name="android.intent.action.VIEW"/><data android:scheme="https"/></intent></queries>\n    <application#' $M
-          sed -i 's#<category android:name="android.intent.category.LAUNCHER"/>#&\n                <category android:name="android.intent.category.LEANBACK_LAUNCHER"/>#' $M
-          sed -i 's#<application#<application #' $M
+        script: python3 patch_manifest.py
       - name: Dependencias
         script: flutter pub get
       - name: Compilar APK
