@@ -5,6 +5,7 @@ workflows:
     instance_type: mac_mini_m2
     environment:
       flutter: stable
+      java: 21
     scripts:
       - name: Generar carpeta android sin pisar el codigo
         script: |
